@@ -26,7 +26,7 @@ Clone [Mongo Git repository](https://github.com/mongodb/mongo.git) and checkout 
 
 ## Compile
 
-Run an optimized `install-core` (includes `mongod` and `mongos`) build for the CPU of Rpi 2.
+Run an optimized `install-core` (includes `mongod` and `mongos`) build for the CPU of Rpi zero 2.
 
 	python3 buildscripts/scons.py --disable-warnings-as-errors CC=/usr/bin/aarch64-linux-gnu-gcc-10 CXX=/usr/bin/aarch64-linux-gnu-g++-10 CCFLAGS="-march=armv8-a+crc -mtune=cortex-a53" install-core
 > Results in ~31GB of files of which ~8GB are the binaries
