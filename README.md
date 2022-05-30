@@ -40,7 +40,7 @@ Having an arm64 architecture, stripping debug will be done using `aarch64-linux-
 	aarch64-linux-gnu-objcopy --strip-debug mongod
 	aarch64-linux-gnu-objcopy --strip-debug mongos
 
-Another possible way could be to change the objcopy location in the $PATH enviroment variable.
+Another possible way could be to change the objcopy location in the $PATH enviroment variable and try with the above args (`install-mode` etc).
 	
 > Stripped binaries (`mongo`, `mongod`, `mongos`) are located in `build/install/bin` and their total size is ~250MB.
 
